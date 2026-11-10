@@ -6,7 +6,7 @@
 from copy import deepcopy
 
 from geometry_msgs.msg import PoseStamped
-from stretch_nav2.robot_navigator import BasicNavigator, TaskResult
+from parcs_parcs_stretch_nav2.robot_navigator import BasicNavigator, TaskResult
 
 import rclpy
 from rclpy.node import Node

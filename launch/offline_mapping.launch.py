@@ -10,8 +10,8 @@ from ament_index_python.packages import get_package_share_directory, get_package
 
 def generate_launch_description():
     stretch_core_path = get_package_share_directory('stretch_core')
-    stretch_navigation_path = get_package_share_directory('stretch_nav2')
-    navigation_package = str(get_package_share_path("stretch_nav2"))
+    stretch_navigation_path = get_package_share_directory('parcs_stretch_nav2')
+    navigation_package = str(get_package_share_path("parcs_stretch_nav2"))
 
     rviz_param = DeclareLaunchArgument('use_rviz', default_value='true', choices=['true', 'false'])
     
