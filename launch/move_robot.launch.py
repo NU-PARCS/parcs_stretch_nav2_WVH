@@ -14,14 +14,14 @@ def generate_launch_description():
         launch_arguments={'mode': 'position', 'broadcast_odom_tf': 'True'}.items(),
     )
 
-    move_lift_node = Node(
+    move_robot_node = Node(
         package='parcs_stretch_nav2',
-        executable='move_lift.py',
+        executable='move_robot.py',
         output='screen',
     )
 
     return LaunchDescription([
         stretch_driver_launch,
-        # Give the driver a few seconds to come up before commanding the lift
-        TimerAction(period=5.0, actions=[move_lift_node]),
+        # Give the driver a few seconds to come up before commanding the joints
+        TimerAction(period=5.0, actions=[move_robot_node]),
     ])

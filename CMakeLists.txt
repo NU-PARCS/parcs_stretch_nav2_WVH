@@ -34,7 +34,7 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   parcs_stretch_nav2/simple_commander_demo.py
-  parcs_stretch_nav2/move_lift.py
+  parcs_stretch_nav2/move_robot.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
